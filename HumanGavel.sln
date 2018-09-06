@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanGavelWeb", "HumanGavelWeb\HumanGavelWeb.csproj", "{238AE617-DBAD-4BBB-ABC2-5FFA9A2F7096}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanGavel.Data", "HumanGavel.Data\HumanGavel.Data.csproj", "{0C256E94-CA63-406E-B87C-B1E5BE69DFA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{7859F092-B186-4E8D-B5BD-3A03723F091B}"
+	ProjectSection(SolutionItems) = preProject
+		Configuration\App._common.config = Configuration\App._common.config
+		Configuration\App.CloudDev.config = Configuration\App.CloudDev.config
+		Configuration\App.local.config = Configuration\App.local.config
+		Configuration\CustomBuildTargets.targets = Configuration\CustomBuildTargets.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HGTests", "HGTests\HGTests.csproj", "{6D879D62-6285-45A4-99E7-33AE18717D2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanGavel.Common", "HumanGavel.Common\HumanGavel.Common.csproj", "{1DB1059C-A0A9-4D46-B008-8B030941B9B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanGavel.Data.Documents", "HumanGavel.Data.Documents\HumanGavel.Data.Documents.csproj", "{5D958C2D-BD99-468C-8940-BAA3EDD88F2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{EE4D3F3F-5D3C-4F46-BE1D-E3498E6EC575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseGenerator", "CaseGenerator\CaseGenerator.csproj", "{67008494-B943-4A86-833F-8F7D004C2466}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CloudDev|Any CPU = CloudDev|Any CPU
+		local|Any CPU = local|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{238AE617-DBAD-4BBB-ABC2-5FFA9A2F7096}.CloudDev|Any CPU.ActiveCfg = CloudDev|Any CPU
+		{238AE617-DBAD-4BBB-ABC2-5FFA9A2F7096}.CloudDev|Any CPU.Build.0 = CloudDev|Any CPU
+		{238AE617-DBAD-4BBB-ABC2-5FFA9A2F7096}.local|Any CPU.ActiveCfg = local|Any CPU
+		{238AE617-DBAD-4BBB-ABC2-5FFA9A2F7096}.local|Any CPU.Build.0 = local|Any CPU
+		{238AE617-DBAD-4BBB-ABC2-5FFA9A2F7096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238AE617-DBAD-4BBB-ABC2-5FFA9A2F7096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C256E94-CA63-406E-B87C-B1E5BE69DFA1}.CloudDev|Any CPU.ActiveCfg = CloudDev|Any CPU
+		{0C256E94-CA63-406E-B87C-B1E5BE69DFA1}.CloudDev|Any CPU.Build.0 = CloudDev|Any CPU
+		{0C256E94-CA63-406E-B87C-B1E5BE69DFA1}.local|Any CPU.ActiveCfg = local|Any CPU
+		{0C256E94-CA63-406E-B87C-B1E5BE69DFA1}.local|Any CPU.Build.0 = local|Any CPU
+		{0C256E94-CA63-406E-B87C-B1E5BE69DFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C256E94-CA63-406E-B87C-B1E5BE69DFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D879D62-6285-45A4-99E7-33AE18717D2C}.CloudDev|Any CPU.ActiveCfg = CloudDev|Any CPU
+		{6D879D62-6285-45A4-99E7-33AE18717D2C}.CloudDev|Any CPU.Build.0 = CloudDev|Any CPU
+		{6D879D62-6285-45A4-99E7-33AE18717D2C}.local|Any CPU.ActiveCfg = local|Any CPU
+		{6D879D62-6285-45A4-99E7-33AE18717D2C}.local|Any CPU.Build.0 = local|Any CPU
+		{6D879D62-6285-45A4-99E7-33AE18717D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D879D62-6285-45A4-99E7-33AE18717D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB1059C-A0A9-4D46-B008-8B030941B9B1}.CloudDev|Any CPU.ActiveCfg = CloudDev|Any CPU
+		{1DB1059C-A0A9-4D46-B008-8B030941B9B1}.CloudDev|Any CPU.Build.0 = CloudDev|Any CPU
+		{1DB1059C-A0A9-4D46-B008-8B030941B9B1}.local|Any CPU.ActiveCfg = local|Any CPU
+		{1DB1059C-A0A9-4D46-B008-8B030941B9B1}.local|Any CPU.Build.0 = local|Any CPU
+		{1DB1059C-A0A9-4D46-B008-8B030941B9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB1059C-A0A9-4D46-B008-8B030941B9B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D958C2D-BD99-468C-8940-BAA3EDD88F2B}.CloudDev|Any CPU.ActiveCfg = CloudDev|Any CPU
+		{5D958C2D-BD99-468C-8940-BAA3EDD88F2B}.CloudDev|Any CPU.Build.0 = CloudDev|Any CPU
+		{5D958C2D-BD99-468C-8940-BAA3EDD88F2B}.local|Any CPU.ActiveCfg = local|Any CPU
+		{5D958C2D-BD99-468C-8940-BAA3EDD88F2B}.local|Any CPU.Build.0 = local|Any CPU
+		{5D958C2D-BD99-468C-8940-BAA3EDD88F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D958C2D-BD99-468C-8940-BAA3EDD88F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67008494-B943-4A86-833F-8F7D004C2466}.CloudDev|Any CPU.ActiveCfg = CloudDev|Any CPU
+		{67008494-B943-4A86-833F-8F7D004C2466}.CloudDev|Any CPU.Build.0 = CloudDev|Any CPU
+		{67008494-B943-4A86-833F-8F7D004C2466}.local|Any CPU.ActiveCfg = local|Any CPU
+		{67008494-B943-4A86-833F-8F7D004C2466}.local|Any CPU.Build.0 = local|Any CPU
+		{67008494-B943-4A86-833F-8F7D004C2466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67008494-B943-4A86-833F-8F7D004C2466}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67008494-B943-4A86-833F-8F7D004C2466} = {EE4D3F3F-5D3C-4F46-BE1D-E3498E6EC575}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://humangavel.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = HumanGavelWeb\\HumanGavelWeb.csproj
+		SccProjectName1 = HumanGavelWeb
+		SccLocalPath1 = HumanGavelWeb
+		SccProjectUniqueName2 = HGTests\\HGTests.csproj
+		SccProjectName2 = HGTests
+		SccLocalPath2 = HGTests
+		SccProjectUniqueName3 = HumanGavel.Data\\HumanGavel.Data.csproj
+		SccProjectName3 = HumanGavel.Data
+		SccLocalPath3 = HumanGavel.Data
+		SccProjectUniqueName4 = HumanGavel.Common\\HumanGavel.Common.csproj
+		SccProjectName4 = HumanGavel.Common
+		SccLocalPath4 = HumanGavel.Common
+		SccProjectUniqueName5 = HumanGavel.Data.Documents\\HumanGavel.Data.Documents.csproj
+		SccProjectName5 = HumanGavel.Data.Documents
+		SccLocalPath5 = HumanGavel.Data.Documents
+		SccProjectUniqueName6 = CaseGenerator\\CaseGenerator.csproj
+		SccProjectTopLevelParentUniqueName6 = HumanGavel.sln
+		SccProjectName6 = CaseGenerator
+		SccLocalPath6 = CaseGenerator
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,58 @@
+﻿<div class="casePopup" onclick="$.unblockUI();">
+    <div class="popup-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="popup-header-text">
+                        <h2 class="title" ng-bind="$$name"></h2>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="social-options">
+                        <ul>
+                            <li>
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="featurette-divider" style="margin-top: 0px;">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="alert alert-success">You voted on 1/1/2016</div>
+                </div>
+                <div class="col-xs-12 text-left">
+                    <div class="row" style="width:100%" ng-repeat="item in $$case.voteData">
+                        <div class="col-xs-12" ng-bind="item.name + ' (' + item.pct + ')'"></div>
+                        <div class="col-xs-12 bar popup-bar" ng-style='{"width": item.pct}'>
+                            <span ng-bind="item.value"></span>
+                        </div>
+                        <div ng-if="!item.isLast" style="margin-bottom:10px;">&nbsp;</div>
+                    </div>
+                    <div class="clearfix" />
+                </div>
+            </div>
+            <div class="row" style="margin: 5px 0px 5px 0px;">
+                <i class="fa fa-line-chart" aria-hidden="true"></i> Trendline 
+            </div>
+            <div class="vote-buttons">
+                <div class="col-xs-6 vote-column">
+                    <button class="vote-button vote-button-one tooltipable selected">
+                        <span class="particpiant" ng-bind="$$case.voteData[0].name"></span>
+                        <span class="tooltip-text vote-button-tooltip-text">Change Your Vote</span>
+                    </button>
+                </div>
+                <div class="col-xs-6 vote-column">
+                    <button class="vote-button vote-button-two tooltipable">
+                        <span class="particpiant" ng-bind="$$case.voteData[1].name"></span>
+                        <span class="tooltip-text vote-button-tooltip-text">Change Your Vote</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

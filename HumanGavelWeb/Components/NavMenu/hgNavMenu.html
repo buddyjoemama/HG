@@ -1,0 +1,17 @@
+﻿<ul class="nav navbar-nav">
+    <li id="trending" ng-click="$ctrl.$currentFilter = 'trending'" ng-class="{'selected': $ctrl.$currentFilter == 'trending'}">
+        <a href="#">Trending</a>
+    </li>
+    <li id="popular" ng-click="$ctrl.$currentFilter = 'people'" ng-class="{'selected': $ctrl.$currentFilter == 'people'}">
+        <a href="#">People</a>
+    </li>
+    <li id="people" ng-click="$ctrl.$currentFilter = 'lifestyle'" ng-class="{'selected': $ctrl.$currentFilter == 'lifestyle'}">
+        <a href="#">Lifestyle</a>
+    </li>
+    <li id="places" ng-click="$ctrl.$currentFilter = 'sports'" ng-class="{'selected': $ctrl.$currentFilter == 'sports'}">
+        <a href="#">Sports</a>
+    </li>
+    <li id="lifestyle" ng-click="$ctrl.$currentFilter = 'politics'" ng-class="{'selected': $ctrl.$currentFilter == 'politics'}">
+        <a href="#">Politics</a>
+    </li>
+</ul>

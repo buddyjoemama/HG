@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{238AE617-DBAD-4BBB-ABC2-5FFA9A2F7096}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HumanGavelWeb/Scripts/application/directives/ngChart.js">
+    <Files>
+      <File FileName="Source Control Explorer" />
+      <File FileName="HumanGavelWeb/Scripts/application/services/casesService.js" Line="1" Column="1" />
+      <File FileName="HumanGavelWeb/Scripts/application/directives/ngChart.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="CloudDev" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HumanGavelWeb PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

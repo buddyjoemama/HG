@@ -1,0 +1,10 @@
+﻿<div id="myCarousel" uib-carousel active="0" interval="5000" no-wrap="false">
+    <div uib-slide ng-repeat="slide in slides track by slide.caseId" index="slide.caseId">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+            <!--<h4>Slide {{slide.caseId}}</h4>-->
+            <p style="font-size:xx-large">{{slide.name}}</p>
+        </div>
+    </div>
+    <ng-transclude></ng-transclude>
+</div>

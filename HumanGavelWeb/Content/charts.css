@@ -1,0 +1,43 @@
+﻿.bar {
+    color: white;
+    background-color: #286090;
+    height: 20px;
+}
+
+.pct {
+
+}
+
+.casePopup .hg-chart strong.series-name {
+    display: inline;
+}
+ 
+.hg-chart {
+    margin-bottom: 10px;
+}
+
+.hg-chart span.series-name {
+    display: none;
+}
+@media(min-width: 768px) {
+    .casePopup .hg-chart strong.series-name {
+        display: none;
+    }
+
+    .casePopup .hg-chart span.series-name {
+        display: inline;
+    }
+}
+
+.bar-container {
+    width: 80%;
+    float: left;
+}
+
+.bar-value {
+    margin-right: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+    max-width: 55px;
+}

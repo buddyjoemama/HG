@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html ng-app="humanGavelUser.app">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    <link rel="stylesheet" href="Content/bootstrap.css" />
+    <link rel="stylesheet" href="Content/carousel.css" />
+    <link rel="stylesheet" href="Content/Site.css" />
+    <link rel="stylesheet" href="Content/case.css" />
+    <link rel="stylesheet" href="Content/charts.css" />
+    <link rel="stylesheet" href="Content/popup.css" />
+    <link rel="stylesheet" href="Content/social.css" />
+    <link rel="stylesheet" href="Content/voting.css" />
+
+    <script src="https://use.fontawesome.com/d1f7586846.js"></script>
+    <script src="dist/web.hg.libs.min.js"></script>
+    <script src="dist/web.hg.min.js"></script>
+</head>
+<body>
+    <!--script>
+        // This is called with the results from from FB.getLoginStatus().
+        function statusChangeCallback(response) {
+            console.log('statusChangeCallback');
+            console.log(response);
+            // The response object is returned with a status field that lets the
+            // app know the current login status of the person.
+            // Full docs on the response object can be found in the documentation
+            // for FB.getLoginStatus().
+            if (response.status === 'connected') {
+                // Logged into your app and Facebook.
+                testAPI();
+            } else if (response.status === 'not_authorized') {
+                // The person is logged into Facebook, but not your app.
+                document.getElementById('status').innerHTML = 'Please log ' +
+                  'into this app.';
+            } else {
+                // The person is not logged into Facebook, so we're not sure if
+                // they are logged into this app or not.
+                document.getElementById('status').innerHTML = 'Please log ' +
+                  'into Facebook.';
+            }
+        }
+
+        function checkLoginState() {
+            FB.getLoginStatus(function (response) {
+                statusChangeCallback(response);
+            });
+        }
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1061554310607755',
+                xfbml: true,
+                version: 'v2.7',
+                cookie: true
+            });
+
+            FB.getLoginStatus(function (response) {
+                statusChangeCallback(response);
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        function testAPI() {
+            console.log('Welcome!  Fetching your information.... ');
+            FB.api('/me', function (response) {
+                console.log('Successful login for: ' + response.name);
+                document.getElementById('status').innerHTML =
+                  'Thanks for logging in, ' + response.name + '!';
+
+                FB.api("/" + response.id, function (r) {
+
+                });
+            });
+        }
+    </script-->
+
+    <hg-carousel>
+        <div class="app-title">
+            <h1>Human Gavel</h1>
+            <span>Welcome to the court of public opinion</span>
+        </div>
+    </hg-carousel>
+
+    <!-- Menu button group -->
+    <hg-nav-menu id="mainActionMenu"></hg-nav-menu>
+
+    <main id="caseContainer" class="container">
+        <hg-case-list></hg-case-list>
+    </main>
+
+    <hr class="featurette-divider">
+    <div class="container">
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2016 Media Out Loud, llc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>

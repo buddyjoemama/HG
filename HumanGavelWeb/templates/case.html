@@ -1,0 +1,23 @@
+<div id="content_{{$id}}" class="case case-md" ng-class="{'selected': $$selected == true}">
+    <img ng-src="{{$$image}}" width="100%" />
+    <ng-Countdown style="position: absolute; left: 5px; top: 0px;" end-date="2/14/2019"></ng-Countdown>
+    <i class="fa fa-star-o" data-toggle="tooltip" title="Follow" aria-hidden="true" 
+       style="position: absolute; right:5px; top: 5px;font-size: 2em; color:white;"></i>
+    <div class="case-info">
+        <h2 class="text-center" ng-bind="$$name"></h2>
+        <ng-Chart series="$$case"></ng-Chart>
+        <div>
+            <i class="fa fa-users"></i>
+            How my friends voted 
+        </div>
+    </div>
+</div>
+
+<div id="content_sm_{{$id}}" class="case case-xs">
+    <div class="image-container">
+        <img ng-src="{{$$image}}" />
+    </div>
+    <div class="chart-container">
+        <ng-Chart series="$$case"></ng-Chart>
+    </div>
+</div>

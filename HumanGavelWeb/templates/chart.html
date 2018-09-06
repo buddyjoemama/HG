@@ -1,0 +1,15 @@
+<div class="hg-chart" ng-repeat="item in $chartData.voteData">
+    <div class="chart-content">
+        <div>
+            <strong class="series-name" ng-bind="item.name"></strong>
+        </div>
+        <div class="bar-container">
+            <div class="bar" ng-style='{"width": item.pct}'>
+                <span class="bar-value pull-right" ng-bind="item.value"></span>
+                <span class="pull-left series-name" ng-bind="item.name"></span>
+            </div>
+        </div>
+        <div class="pull-right text-right pct" ng-bind="item.pct"></div>
+        <div style="clear:both;" />
+    </div>
+</div>

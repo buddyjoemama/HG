@@ -1,0 +1,43 @@
+<script>
+    var menu;
+    var cases;
+    var carousel;
+
+    $(document).ready(function () {
+        menu = $("#mainActionMenu");
+        cases = $("#caseContainer");
+        carousel = $("#myCarousel");
+    });
+
+    // Apply the sticky menu
+    $(window).scroll(function () {
+        var window_offset = carousel.offset().top - $(window).scrollTop();
+
+        if ($("#myCarousel").css("display") === "block") {
+            if (Math.abs(window_offset) >= carousel.height()) {
+                menu.addClass("sticky");
+                cases.css({ "margin-top": '65px' });
+            } else {
+                menu.removeClass("sticky");
+                cases.css({ "margin-top": '10px' });
+            }
+        }
+    });
+
+</script>
+
+<carousel>
+    <div class="app-title">
+        <h1>Human Gavel</h1>
+        <span>Welcome to the court of public opinion</span>
+    </div>
+</carousel>
+
+<!-- Menu button group -->
+<nav-menu id="mainActionMenu"></nav-menu>
+
+<main id="caseContainer" class="container">
+    <infinite-Scroll count="3">
+        <ng-case case="item"></ng-case>
+    </infinite-Scroll>
+</main>

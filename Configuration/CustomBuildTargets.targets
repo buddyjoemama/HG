@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+  <!--Base properties-->
+  <PropertyGroup>
+    <ConfigFileName Condition="'$(WebProject)' == 'True'">Web.config</ConfigFileName>
+    <ConfigFileName Condition="'$(WebProject)' == ''">App.config</ConfigFileName>
+  </PropertyGroup>
+  
+  <!--Properties for web projects.-->
+  <PropertyGroup Condition="'$(WebProject)' == 'True'">
+    <SourceConfigFile>Web.config</SourceConfigFile>
+    <OutputConfigFile>Web.config</OutputConfigFile>
+  </PropertyGroup>
+
+  <!--Properties for executables/libraries-->
+  <PropertyGroup Condition="'$(WebProject)' == '' And ('$(OutputType)' == 'Library' Or '$(OutputType)' == 'WinExe' Or '$(OutputType)' == 'Exe')">
+    <SourceConfigFile>App.config</SourceConfigFile>
+    <OutputConfigFile>$(ProjectDir)App.config</OutputConfigFile>
+  </PropertyGroup>
+    
+  <!--Slowcheetah used for xml transforms-->
+  <UsingTask TaskName="TransformXml" AssemblyFile="$(SolutionDir)\Configuration\Microsoft.Web.Publishing.Tasks.dll" />
+  
+  <PropertyGroup>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">$(MSBuildProjectDirectory)</SolutionDir>
+  </PropertyGroup>
+
+  <Target Name="BeforeBuild">
+    <CallTarget Targets="Transform"/>
+  </Target>
+
+  <!--Use TF.exe to checkout the web.config so it can be overwritten-->
+  <Target Name="Transform">
+    <!-- Transform against the common then the specific config -->
+    <TransformXml ContinueOnError="true"
+          Source="$(SourceConfigFile)"
+          Transform="$(SolutionDir)\Configuration\App._Common.config"
+          Destination="$(OutputConfigFile)"/>
+    
+    <TransformXml ContinueOnError="true"
+          Source="$(SourceConfigFile)"
+          Transform="$(SolutionDir)\Configuration\App.$(ConfigurationName).config"
+          Destination="$(OutputConfigFile)"/>
+  </Target>
+  
+</Project>

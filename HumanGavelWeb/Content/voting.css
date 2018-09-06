@@ -1,0 +1,46 @@
+﻿.vote-column {
+    padding: 0px;
+}
+
+.vote-button {
+    color: white;
+    height: 50px;
+    background-color: #31b0d5;
+    width: 100%;
+    border: 1px solid #269abc;
+    line-height: 1.3333333;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+    .vote-button.selected::before {
+        font-family: 'GLYPHICONS Halflings';
+        content: '\e013';
+    }
+
+@media(min-width:768px) {
+    .vote-button {
+        font-size: 1.5em;
+    }
+}
+
+.vote-buttons {
+    margin: 5px -5px -5px -5px;
+}
+.vote-button.selected {
+    border: 1px solid white;
+}
+
+.vote-button-one {
+    border-radius: 0px 0px 0px 4px;
+}
+
+.vote-buttons-two {
+    border-radius: 0px 0px 4px 0px;
+}
+
+.vote-button-tooltip-text {
+    bottom: 55px;
+    left: 5px;
+}

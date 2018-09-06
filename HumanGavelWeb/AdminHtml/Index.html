@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="humanGavel.app">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    <!-- For brackets -->
+    <link rel="stylesheet" href="../Content/bootstrap.css" />
+    <link rel="stylesheet" href="../Content/bootstrap-theme.css">
+    <link rel="stylesheet" href="../Content/Site.css" />
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#/dashboard" class="navbar-brand">Human Gavel Admin</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/create">Case Administration</a></li>
+                    <li><a href="#/view">View Cases</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div ng-view>
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; 2016 Media Out Loud, LLC.</p>
+        </footer>
+    </div>
+
+    <!-- for brackets -->
+    <script type="text/javascript" src="../Scripts/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/angular.min.js"></script>
+    <script type="text/javascript" src="../Scripts/angular-route.min.js"></script>
+    <script type="text/javascript" src="../Scripts/application/app.js"></script>
+
+</body>
+</html>

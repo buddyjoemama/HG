@@ -1,0 +1,54 @@
+.navbar-inverse {
+    background-color: transparent;
+    border: none;
+}
+
+.nav.navbar-nav {
+    float:right;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+.carousel-inner > .item {
+    background: black;
+}
+
+.slide-image-container {
+    overflow: hidden;
+    margin-right: auto; 
+    margin-left: auto;
+    max-width:1024px;
+}
+
+.slide-image {
+    width: 320px;
+}
+
+.carousel-control {
+    display: none;
+}
+#myCarousel {
+    height: auto;
+    overflow: hidden;
+}
+
+#myCarousel .container {   
+    display: none;
+}
+
+@media (min-width:768px) { 
+    
+    #myCarousel {
+        height:auto;    
+    }
+    
+    .slide-image {
+        width: 1024px;
+    }
+}

@@ -1,0 +1,44 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Xml.Linq" #>
+<#@ assembly name="System.Xml" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Xml.Linq"#>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+
+using System;
+namespace HumanGavel.Common.Configuration
+{
+	public static partial class ApplicationConfigurationManager
+	{
+		<#
+			var root = XElement.Load(Host.ResolvePath(@"..\App.config"));
+
+			foreach(var element in root.Descendants("add"))
+			{
+				var att = element.Attribute("key");
+
+				if(att != null)
+				{
+					var name = att.Value;
+
+		#>
+
+		public static String <#=name #>
+		{
+			get
+			{
+				return GetSetting("<#=name#>");
+			}
+		}
+
+		<#
+				}
+			}
+
+		#>
+	}
+}
